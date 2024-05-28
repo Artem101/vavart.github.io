@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контактной информации */
+.contact-block {
+    background-color: rgba(128, 128, 128, 0.7); /* Тусклый серый фон */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box; /* Обеспечивает правильное выравнивание padding */
+    position: fixed; /* Зафиксировать менюшку */
+    top: 0; /* Разместить менюшку в верхней части страницы */
+    z-index: 1000; /* Позволяет меню находиться поверх других элементов */
+}
+
+/* Стили для ссылок на социальные сети */
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px; /* Чуть больший размер иконок */
+}
+
+/* Стили для информационного блока */
+.info-box {
+position: absolute;
+bottom: 20px; /* Отступ снизу */
+right: 20px; /* Отступ справа */
+background-color: rgba(0, 0, 128, 0.5); /* Полупрозрачный синий фон */
+color: white;
+padding: 20px;
+width: 300px; /* Фиксированная ширина */
+height: 200px; /* Фиксированная высота */
+font-size: 16px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+display: flex;
+justify-content: flex-start; /* Выравнивание текста по левому краю */
+align-items: flex-start; /* Выравнивание текста по верхнему краю */
+flex-direction: column; /* Отображение текста в столбик */
+text-align: left; /* Выравнивание текста по левому краю */
+font-family: 'Roboto', sans-serif; /* Шрифт текста */
+font-style: italic; /* Курсивный шрифт */
+font-weight: 600; /* Полужирный шрифт */
+line-height: 1.5; /* Межстрочный интервал */
+text-transform: uppercase; /* Преобразование текста в верхний регистр */
+letter-spacing: 0.1em; /* Расстояние между символами */
+}
+
+/* Стили для изображения */
+.fullscreen-image {
+height: calc(100vh - 40px); /* Высота изображения с учетом отступа меню */
+background: url('static/Gregory.png') no-repeat center center/cover; /* Замените 'your-image-url.jpg' на URL вашего изображения */
+}
+.accordion {
+    width: 60%;
+    margin: 20px auto; /* Центрирование по горизонтали */
+    box-shadow: none; /* Убирает белую рамку */
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 8px; /* Закругленные углы */
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    color: #0c183b;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    border: none; /* Убирает границу */
+}
+
+.accordion-header:hover {
+    background-color: #f9f9f9;
+}
+
+.accordion-content {
+    padding: 20px;
+    display: none;
+    overflow: hidden;
+    font-size: 16px;
+    color: #0c183b;
+    line-height: 1.5;
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+.accordion-header u {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #0c183b;
+    transition: transform 0.3s ease;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    background-color: #cca300;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon.rotate {
+    transform: rotate(45deg);
+}
+.t-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.t-align_center {
+    text-align: center;
+}
+
+.t-margin_auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t-title {
+    margin: 0;
+    padding: 0;
+}
+
+.t-title_lg {
+    font-size: 52px;
+}
+
+.t-descr {
+    margin: 20px 0 0 0;
+}
+
+.t-descr_xl {
+    font-size: 30px;
+}
+
+.t-rec_pt_90 {
+    padding-top: 90px;
+}
+
+@media screen and (min-width: 900px) {
+    .t-title_lg {
+        font-size: 52px;
+    }
+}
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.separator {
+    height: 2px;
+    background-color: #cca300;
+    margin: 20px 0;
+}
+
+.t510__container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.t510__item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.t510__circle {
+    background-color: #cca300;
+    color: #cca300;
+    border: 2px solid #cca300;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.t510__text {
+    font-size: 22px;
+    color: #000000;
+    line-height: 1.5;
+    margin-left: 20px; /* Добавляем фиксированный отступ для всех элементов */
+}

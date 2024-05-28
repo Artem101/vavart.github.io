@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактный блок</title>
+    <!-- Подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="static/index.css">
+    <style>
+        .fullscreen-image {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Высота экрана */
+            background: url('static/Gregory.png') no-repeat center center/cover; /* Замените 'your-image-url.jpg' на URL вашего изображения */
+        }
+
+    </style>
+    
+    </head>
+    <body>
+    <!-- Контактная информация -->
+    <div class="contact-block">
+    <div class="contact-info">
+        <span>📞 +123 456 7890</span>
+        <span>Работаю с 10.00 до 19.00</span>
+        <span>Писать можно 24/7</span>
+    </div>
+    <div class="social-links">
+        <a href="https://t.me/yourtelegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    </div>
+
+
+    <!-- Информационный блок с фоновым изображением -->
+    <div class="fullscreen-image">
+    <div class="info-box">
+        БОЛЬШЕ НЕ НАДО ТРАТИТЬ ВРЕМЯ НА ПОИСКИ
+        <br><br>
+        Подбор новостроек и коммерции в Москве и Московской области с риэлтором бесплатно.
+    </div>
+    </div>
+    <div id="rec603967351" class="r t-rec t-rec_pt_90 r_showed r_anim" style="padding-top:90px;" data-record-type="467">
+        <div class="t467">
+            <div class="t-container t-align_center">
+                <div class="t-col t-col_12">
+                    <h1 class="t467__title t-title t-title_lg t-margin_auto" field="title">
+                        <div style="font-size: 52px;" data-customstyle="yes">
+                            <span style="color: rgb(12, 24, 59);">Денисенко Григорий</span>
+                        </div>
+                    </h1>
+                    <div class="t467__descr t-descr t-descr_xl t-margin_auto" field="descr">
+                        <div style="font-size: 30px;" data-customstyle="yes">
+                            <span style="font-weight: 400;">Решаю задачи других людей. Брокер по новостройкам. Занимаюсь подбором квартир в новостройке, коммерческих помещений и инвестициями в недвижимость Москвы и Подмосковья.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <u>Немного обо мне</u>
+            <div class="icon-container">
+                <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5-11H7v-2h10v2z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="accordion-content">
+            <p>Родился и вырос я в Архангельске. Недвижимость, стройка и Москва случились у меня одновременно, в 2013 году. Это был семейный бизнес - реконструкция домов, ремонт помещений, жизнь бурлила). Сейчас я брокер по новостройкам, помогаю своим клиентам подбирать квартиры и коммерческие помещения для бизнеса, знаю ответы на все их вопросы!</p>
+            <p>Моя задача заключается в том, чтобы мои клиенты купили тот объект, который подойдет им по всем параметрам - цена, локация, уровень комфорта, условия покупки и эксплуатации и многие другие факторы.</p>
+        </div>
+    </div>
+    <div class="section-title">ЗАЧЕМ НУЖЕН РИЭЛТОР ПРИ ПОКУПКИ НОВОСТРОЙКИ?</div>
+    <div class="separator"></div>
+    <ul class="t510__container">
+        <li class="t510__item">
+            <div class="t510__circle">1</div>
+            <div class="t510__text">У каждого ЖК есть плюсы и минусы, как не ошибиться?</div>
+        </li>
+        <li class="t510__item">
+            <div class="t510__circle">2</div>
+            <div class="t510__text">Каждый застройщик хвалит себя, какого выбрать?</div>
+        </li>
+        <li class="t510__item">
+            <div class="t510__circle">3</div>
+            <div class="t510__text">Госпрограммы для выгодной покупки сейчас какие?</div>
+        </li>
+        <li class="t510__item">
+            <div class="t510__circle">4</div>
+            <div class="t510__text">Самые перспективные, инвестиционно привлекательные районы Москвы для покупки недвижимости какие?</div>
+        </li>
+        <li class="t510__item">
+            <div class="t510__circle">5</div>
+            <div class="t510__text">Устали всех обзванивать, не хватает времени, далеко живёте, совсем запутались?</div>
+        </li>
+    </ul>
+    <div class="separator"></div>
+
+    <script>
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+            content.classList.toggle('show');
+            const icon = element.querySelector('.icon');
+            icon.classList.toggle('rotate');
+        }
+    </script>
+    </body>
+    </html>

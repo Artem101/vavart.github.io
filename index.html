@@ -3,109 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контактный блок</title>
-    <!-- Подключение Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="static/index.css">
+    <title>Карточки с адаптивным дизайном</title>
     <style>
-        .fullscreen-image {
-            position: relative;
-            width: 100%;
-            height: 100vh; /* Высота экрана */
-            background: url('static/Gregory.png') no-repeat center center/cover; /* Замените 'your-image-url.jpg' на URL вашего изображения */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
         }
 
+        .t841 {
+            padding: 30px 0;
+        }
+
+        .t-card__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .t-card__col {
+            flex: 1 1 calc(25% - 20px); /* 4 колонки с промежутками */
+            margin: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .t-card__col a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .t-card__title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .t-card__descr {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .t-card__btn-wrapper {
+            margin-top: 20px;
+        }
+
+        .t-card__btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #cca300;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .t-card__col {
+                flex: 1 1 100%; /* Одноэлементный столбец на мобильных устройствах */
+            }
+        }
     </style>
-    
-    </head>
-    <body>
-    <!-- Контактная информация -->
-    <div class="contact-block">
-    <div class="contact-info">
-        <span>📞 +123 456 7890</span>
-        <span>Работаю с 10.00 до 19.00</span>
-        <span>Писать можно 24/7</span>
-    </div>
-    <div class="social-links">
-        <a href="https://t.me/yourtelegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-        <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
-    </div>
-
-
-    <!-- Информационный блок с фоновым изображением -->
-    <div class="fullscreen-image">
-    <div class="info-box">
-        БОЛЬШЕ НЕ НАДО ТРАТИТЬ ВРЕМЯ НА ПОИСКИ
-        <br><br>
-        Подбор новостроек и коммерции в Москве и Московской области с риэлтором бесплатно.
-    </div>
-    </div>
-    <div id="rec603967351" class="r t-rec t-rec_pt_90 r_showed r_anim" style="padding-top:90px;" data-record-type="467">
-        <div class="t467">
-            <div class="t-container t-align_center">
-                <div class="t-col t-col_12">
-                    <h1 class="t467__title t-title t-title_lg t-margin_auto" field="title">
-                        <div style="font-size: 52px;" data-customstyle="yes">
-                            <span style="color: rgb(12, 24, 59);">Денисенко Григорий</span>
+</head>
+<body>
+    <div class="t841">
+        <div class="t-card__container t841__container" data-blocks-per-row="4">
+            <div class="t-card__col t841__col t-item" style="cursor: pointer;">
+                <div class="t841__wrapper">
+                    <div class="t841__content">
+                        <div class="t841__textwrapper">
+                            <div class="t-card__title">
+                                <a href="#popup:myform" class="t-card__link">Помогу не ошибиться</a>
+                            </div>
+                            <div class="t-card__descr">
+                                <span>Застройщик заинтересован продать Вам конкретно свой лот.</span><br>
+                                <span>Я не заинтересована в конкретном ЖК, продаю ВСЮ Москву, поэтому дам вам честный расклад по всем плюсам и минусам любого ЖК и по застройщикам.</span><br><br>
+                                <span>Сотрудничаю практически со всеми застройщиками в Москве и Подмосковье, подберу для Вас</span>
+                                <strong>5 лучших вариантов из ТОП-50 новостроек</strong>
+                                <span>Москвы под Ваш запрос.</span>
+                            </div>
                         </div>
-                    </h1>
-                    <div class="t467__descr t-descr t-descr_xl t-margin_auto" field="descr">
-                        <div style="font-size: 30px;" data-customstyle="yes">
-                            <span style="font-weight: 400;">Решаю задачи других людей. Брокер по новостройкам. Занимаюсь подбором квартир в новостройке, коммерческих помещений и инвестициями в недвижимость Москвы и Подмосковья.</span>
+                        <div class="t-card__btn-wrapper">
+                            <div class="t-card__btn" id="cardbtn1_604005424">Узнать подробнее</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-card__col t841__col t-item" style="cursor: pointer;">
+                <div class="t841__wrapper">
+                    <div class="t841__content">
+                        <div class="t841__textwrapper">
+                            <div class="t-card__title">
+                                <a href="#popup:myform" class="t-card__link"><strong>Через меня выгоднее</strong></a>
+                            </div>
+                            <div class="t-card__descr">
+                                <span>Вы покупаете через застройщика и по цене застройщика, при этом я помогу получить доп. скидку</span>
+                                <strong>до 10% от стоимости квартиры.</strong><br><br>
+                                <span>Владею самой актуальной информацией о акциях и спецпредложениях от застройщиков, которой нет на их сайтах (ипотека без ПВ, рассрочки без ежемесячных платежей, ипотека от 0,01%, без подтверждения дохода и тд.</span><br><br>
+                                <span>Имею доступ к закрытым бронированиям, а это выгода до 30% к ценам после официального старта продаж.</span>
+                            </div>
+                        </div>
+                        <div class="t-card__btn-wrapper">
+                            <div class="t-card__btn" id="cardbtn2_604005424">Узнать подробнее</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-card__col t841__col t-item" style="cursor: pointer;">
+                <div class="t841__wrapper">
+                    <div class="t841__content">
+                        <div class="t841__textwrapper">
+                            <div class="t-card__title">
+                                <a href="#popup:myform" class="t-card__link">Я не беру комиссию, при этом всю рутину возьму на себя</a>
+                            </div>
+                            <div class="t-card__descr">
+                                <span>Мою работу оплачивает застройщик из своего</span>
+                                <strong>рекламного бюджета.</strong><br><br>
+                                <span>Я помогаю в выборе ЖК, застройщика, программы приобретения, при этом покупка самой квартиры проходит через застройщика.</span><br><br>
+                                <span>Максимально помогу сэкономить</span>
+                                <strong>Ваше время и оптимизировать бюджет покупки.</strong>
+                            </div>
+                        </div>
+                        <div class="t-card__btn-wrapper">
+                            <div class="t-card__btn" id="cardbtn3_604005424">Узнать подробнее</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-card__col t841__col t-item" style="cursor: pointer;">
+                <div class="t841__wrapper">
+                    <div class="t841__content">
+                        <div class="t841__textwrapper">
+                            <div class="t-card__title">
+                                <a href="#popup:myform" class="t-card__link">Безопасность</a>
+                            </div>
+                            <div class="t-card__descr">
+                                <span>Все сделки проходят по 214-ФЗ,</span>
+                                <strong>риск недостроя отсутствует.</strong><br><br>
+                                <span>Работаю с</span>
+                                <strong>ТОП-овыми застройщиками</strong>
+                                <span>Москвы.</span><br><br>
+                                <span>Я НЕ предлагаю застройщиков, которые имеют множество нареканий, понимаю, что</span>
+                                <strong>репутация в современном мире дороже денег!</strong>
+                            </div>
+                        </div>
+                        <div class="t-card__btn-wrapper">
+                            <div class="t-card__btn" id="cardbtn4_604005424">Узнать подробнее</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-            <u>Немного обо мне</u>
-            <div class="icon-container">
-                <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5-11H7v-2h10v2z"/>
-                </svg>
-            </div>
-        </div>
-        <div class="accordion-content">
-            <p>Родился и вырос я в Архангельске. Недвижимость, стройка и Москва случились у меня одновременно, в 2013 году. Это был семейный бизнес - реконструкция домов, ремонт помещений, жизнь бурлила). Сейчас я брокер по новостройкам, помогаю своим клиентам подбирать квартиры и коммерческие помещения для бизнеса, знаю ответы на все их вопросы!</p>
-            <p>Моя задача заключается в том, чтобы мои клиенты купили тот объект, который подойдет им по всем параметрам - цена, локация, уровень комфорта, условия покупки и эксплуатации и многие другие факторы.</p>
-        </div>
-    </div>
-    <div class="section-title">ЗАЧЕМ НУЖЕН РИЭЛТОР ПРИ ПОКУПКИ НОВОСТРОЙКИ?</div>
-    <div class="separator"></div>
-    <ul class="t510__container">
-        <li class="t510__item">
-            <div class="t510__circle">1</div>
-            <div class="t510__text">У каждого ЖК есть плюсы и минусы, как не ошибиться?</div>
-        </li>
-        <li class="t510__item">
-            <div class="t510__circle">2</div>
-            <div class="t510__text">Каждый застройщик хвалит себя, какого выбрать?</div>
-        </li>
-        <li class="t510__item">
-            <div class="t510__circle">3</div>
-            <div class="t510__text">Госпрограммы для выгодной покупки сейчас какие?</div>
-        </li>
-        <li class="t510__item">
-            <div class="t510__circle">4</div>
-            <div class="t510__text">Самые перспективные, инвестиционно привлекательные районы Москвы для покупки недвижимости какие?</div>
-        </li>
-        <li class="t510__item">
-            <div class="t510__circle">5</div>
-            <div class="t510__text">Устали всех обзванивать, не хватает времени, далеко живёте, совсем запутались?</div>
-        </li>
-    </ul>
-    <div class="separator"></div>
-
-    <script>
-        function toggleAccordion(element) {
-            const content = element.nextElementSibling;
-            content.classList.toggle('show');
-            const icon = element.querySelector('.icon');
-            icon.classList.toggle('rotate');
-        }
-    </script>
-    </body>
-    </html>
+</body>
+</html>

@@ -9,152 +9,98 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #fff;
         }
 
-        .t841 {
+        .t940 {
             padding: 30px 0;
+            display: flex;
+            justify-content: center;
         }
 
         .t-card__container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
         }
 
         .t-card__col {
-            flex: 1 1 calc(25% - 20px); /* 4 колонки с промежутками */
-            margin: 10px;
-            background-color: #333;
-            color: #fff;
+            background-color: #fff;
+            color: #000;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            overflow: hidden;
+            flex-basis: calc(50% - 20px); /* Изменяем размер квадратиков */
+            max-width: calc(50% - 20px); /* Изменяем максимальную ширину квадратиков */
+            margin-bottom: 20px; /* Добавляем отступ снизу между карточками */
         }
 
-        .t-card__col a {
-            color: #ffffff;
-            text-decoration: none;
+        .t-card__col.full-width {
+            flex-basis: 100%;
+            max-width: 100%;
         }
 
         .t-card__title {
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            padding: 0 10px;
         }
 
         .t-card__descr {
-            font-size: 16px;
+            font-size: 12px;
             line-height: 1.5;
+            padding: 10px; /* Добавляем отступы для текста */
+            transform: scale(1.2); /* Уменьшаем размер текста */
         }
 
-        .t-card__btn-wrapper {
-            margin-top: 20px;
-        }
-
-        .t-card__btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #cca300;
-            color: #fff;
-            border-radius: 4px;
-            cursor: pointer;
-            text-align: center;
+        .t-card__image {
+            background-size: cover;
+            background-position: center;
+            height: 300px; /* Увеличиваем высоту квадратиков */
+            width: 100%;
         }
 
         @media (max-width: 768px) {
+            .t-card__col, .t-card__col.full-width {
+                flex-basis: calc(100% - 20px);
+                max-width: calc(100% - 20px);
+            }
+
             .t-card__col {
-                flex: 1 1 100%; /* Одноэлементный столбец на мобильных устройствах */
+                height: auto;
+            }
+
+            .t-card__image {
+                height: 200px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="t841">
-        <div class="t-card__container t841__container" data-blocks-per-row="4">
-            <div class="t-card__col t841__col t-item" style="cursor: pointer;">
-                <div class="t841__wrapper">
-                    <div class="t841__content">
-                        <div class="t841__textwrapper">
-                            <div class="t-card__title">
-                                <a href="#popup:myform" class="t-card__link">Помогу не ошибиться</a>
-                            </div>
-                            <div class="t-card__descr">
-                                <span>Застройщик заинтересован продать Вам конкретно свой лот.</span><br>
-                                <span>Я не заинтересована в конкретном ЖК, продаю ВСЮ Москву, поэтому дам вам честный расклад по всем плюсам и минусам любого ЖК и по застройщикам.</span><br><br>
-                                <span>Сотрудничаю практически со всеми застройщиками в Москве и Подмосковье, подберу для Вас</span>
-                                <strong>5 лучших вариантов из ТОП-50 новостроек</strong>
-                                <span>Москвы под Ваш запрос.</span>
-                            </div>
-                        </div>
-                        <div class="t-card__btn-wrapper">
-                            <div class="t-card__btn" id="cardbtn1_604005424">Узнать подробнее</div>
-                        </div>
-                    </div>
-                </div>
+    <div class="t940">
+        <div class="t-card__container">
+            <div class="t-card__col">
+                <div class="t-card__image" style="background-image: url('https://static3.tildacdn.com/tild3637-6137-4736-a139-393336343331/lison-zhao-Lvt7BnCpU.jpg');"></div>
+                <div class="t-card__descr">Природа - Всегда приятно жить в большом городе, но не терять связь с природой.</div>
             </div>
-            <div class="t-card__col t841__col t-item" style="cursor: pointer;">
-                <div class="t841__wrapper">
-                    <div class="t841__content">
-                        <div class="t841__textwrapper">
-                            <div class="t-card__title">
-                                <a href="#popup:myform" class="t-card__link"><strong>Через меня выгоднее</strong></a>
-                            </div>
-                            <div class="t-card__descr">
-                                <span>Вы покупаете через застройщика и по цене застройщика, при этом я помогу получить доп. скидку</span>
-                                <strong>до 10% от стоимости квартиры.</strong><br><br>
-                                <span>Владею самой актуальной информацией о акциях и спецпредложениях от застройщиков, которой нет на их сайтах (ипотека без ПВ, рассрочки без ежемесячных платежей, ипотека от 0,01%, без подтверждения дохода и тд.</span><br><br>
-                                <span>Имею доступ к закрытым бронированиям, а это выгода до 30% к ценам после официального старта продаж.</span>
-                            </div>
-                        </div>
-                        <div class="t-card__btn-wrapper">
-                            <div class="t-card__btn" id="cardbtn2_604005424">Узнать подробнее</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="t-card__col">
+                <div class="t-card__image" style="background-color: #0c183b;"></div>
+                <div class="t-card__descr">Безопасность - Передовые системы безопасности, видеонаблюдение, закрытая территория и бесконтактный электронный пропуск.</div>
             </div>
-            <div class="t-card__col t841__col t-item" style="cursor: pointer;">
-                <div class="t841__wrapper">
-                    <div class="t841__content">
-                        <div class="t841__textwrapper">
-                            <div class="t-card__title">
-                                <a href="#popup:myform" class="t-card__link">Я не беру комиссию, при этом всю рутину возьму на себя</a>
-                            </div>
-                            <div class="t-card__descr">
-                                <span>Мою работу оплачивает застройщик из своего</span>
-                                <strong>рекламного бюджета.</strong><br><br>
-                                <span>Я помогаю в выборе ЖК, застройщика, программы приобретения, при этом покупка самой квартиры проходит через застройщика.</span><br><br>
-                                <span>Максимально помогу сэкономить</span>
-                                <strong>Ваше время и оптимизировать бюджет покупки.</strong>
-                            </div>
-                        </div>
-                        <div class="t-card__btn-wrapper">
-                            <div class="t-card__btn" id="cardbtn3_604005424">Узнать подробнее</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="t-card__col full-width">
+                <div class="t-card__title">Благоустроенный быт</div>
+                <div class="t-card__descr">Доступность школ, детских садов и магазинов. Детские и спортивные площадки во дворе, беседки и места для отдыха, двор без машин, система умный дом и многое другое, что делает нашу жизнь комфортной.</div>
+                <div class="t-card__image" style="background-image: url('https://static3.tildacdn.com/tild3364-6336-4234-a636-663766356164/gaddafi-rusli-Y93IrZ.jpg');"></div>
             </div>
-            <div class="t-card__col t841__col t-item" style="cursor: pointer;">
-                <div class="t841__wrapper">
-                    <div class="t841__content">
-                        <div class="t841__textwrapper">
-                            <div class="t-card__title">
-                                <a href="#popup:myform" class="t-card__link">Безопасность</a>
-                            </div>
-                            <div class="t-card__descr">
-                                <span>Все сделки проходят по 214-ФЗ,</span>
-                                <strong>риск недостроя отсутствует.</strong><br><br>
-                                <span>Работаю с</span>
-                                <strong>ТОП-овыми застройщиками</strong>
-                                <span>Москвы.</span><br><br>
-                                <span>Я НЕ предлагаю застройщиков, которые имеют множество нареканий, понимаю, что</span>
-                                <strong>репутация в современном мире дороже денег!</strong>
-                            </div>
-                        </div>
-                        <div class="t-card__btn-wrapper">
-                            <div class="t-card__btn" id="cardbtn4_604005424">Узнать подробнее</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="t-card__col">
+                <div class="t-card__image" style="background-color: #0c183b;"></div>
+                <div class="t-card__descr">Транспортная доступность - Один из самых важных факторов выбора и покупки квартиры в Москве и Московской области. Помогу подобрать лучшую локацию под ваш запрос.</div>
+            </div>
+            <div class="t-card__col">
+                <div class="t-card__image" style="background-image: url('https://static3.tildacdn.com/tild3166-3039-4563-b735-663335643333/sven-mieke-Zj6bUfkTh.jpg');"></div>
+                <div class="t-card__descr">Паркинг и кладовые - Кто парковался во дворе по 40 минут, тот оценит. В каждом доме есть вещи, которые хранить в квартире не хочется, да и негде, кладовые помещения сейчас становятся всё более востребованы в мегаполисах.</div>
             </div>
         </div>
     </div>
